@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="stylesheet" href="sheet.css" />
+    <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Domine" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Vidaloka" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <title>TEDxYouth@JNS About</title>
+    <script type="text/javascript" src="jquery-1.11.1.min.js"></script>
+</head>
+
+<body>
+    <div id="header" class="aheader">
+        <img class="bg">
+        <div id="nav" onmouseover="onMe()" class="navbar">
+                <a href="javascript:void(0);" id="bar"><i class="fas fa-bars icon"></i></a>
+                <div id="respNav" class="respCon">  
+                        <a id="" href="#iM" class="resp gi">Get invited</a>
+                        <a id="" class="resp">Archive</a>
+                        <!--<a id="" class="navitem ">Speakers</a>-->
+                        <a id="" href="about.html" class="resp">About <span style="color: red; font-weight: 700">TEDx</span></a>
+                        <a id="" href="index.html" class="resp">Home</a>
+                    </div>
+            <img height="64" href="index.html" style="margin-top: 16px; margin-left: 64px; float: left" src="lg.svg" />
+            <a id="" href="index.html" class="navitem gi">Get invited</a>
+            <a id="" class="navitem ">Archive</a>
+            <a id="" class="navitem ">Speakers</a>
+            <a id="" href="about.html" class="navitem ">About <span style="color: red; font-weight: 700">TEDx</span></a>
+            <a id="" href="index.html" class="navitem ">Home</a>
+        </div>
+    </div>
+    
+    <div class="content">
+        <div class="content1">
+        <span style="color: white; font-weight: 500;font-size: 36px"><span style="color: red; font-family: Arial; font-weight: 740">TEDx</span> </span>
+        <br><li><span style="font-size: 12px"><span style="color: red; font-weight: 700">x</span> = independently organized TED event</span></li>
+        <span style="color: white; text-align: justify;font-weight: 500;font-size: 16px"><br>
+                <li>In the spirit of ideas worth spreading, TEDx is a program of local, self-organized events that bring people together to share a TED-like experience. At a TEDx event, TED Talks video and live speakers combine to spark deep discussion and connection. These local, self-organized events are branded TEDx,
+                     where x = independently organized TED event. The TED Conference provides general guidance for the TEDx program, but individual TEDx events are self-organized. (Subject to certain rules and regulations.)</li>
+        </span>
+    </div>
+    
+    <div class="content1">
+            <span style="color: white; font-weight: 500;font-size: 36px">About <span style="color: red; font-family: Arial; font-weight: 740">TED</span> </span>
+            <br>
+            <span style="color: white; text-align: justify;font-weight: 550;font-size: 16px;"><br>
+                    <li>TED is a nonprofit organization devoted to Ideas Worth Spreading. Started as a four-day conference in California 30 years ago, TED has grown to support its mission with multiple initiatives. The two annual TED Conferences invite the world's leading thinkers and doers to speak for 18 minutes or less. Many of these talks are then made available, free, at TED.com. TED speakers have included Bill Gates, Jane Goodall, Elizabeth Gilbert, <br>Sir Richard Branson, Nandan Nilekani, Philippe Starck, Ngozi Okonjo-Iweala, Sal Khan and Daniel Kahneman.
+
+                            <br>The annual TED Conference takes place each spring in Vancouver, British Columbia. TED's media initiatives include TED.com, where new TED Talks are posted daily; TED Translators, which provides subtitles and interactive transcripts as well as translations from volunteers worldwide; the educational initiative TED-Ed. TED has established The Audacious Project that takes a collaborative approach to funding ideas with the potential to create change at thrilling scale; TEDx, which supports individuals or groups in hosting local, self- organized TED-style events around the world, and the TED Fellows program, helping world-changing innovators from around the globe to amplify the impact of their remarkable projects and activities.
+                            
+                           <br> Follow TED on Twitter at <a id="tedLink"href="http://twitter.com/TEDTalks">http://twitter.com/TEDTalks</a>,<br> or on Facebook at <a id="tedLink" href="http://www.facebook.com/TED">http://www.facebook.com/TED</a>.</li>
+            </span>
+        </div>
+    </div>
+    <div class="footer">
+            <div style="text-align: center">
+                <i class="fab fa-github footerItem"></i>
+                <i class="fab fa-instagram footerItem"></i>
+                <i class="fab fa-facebook footerItem"></i>
+                <i class="fab fa-whatsapp footerItem"></i>
+                <i class="far fa-envelope-open footerItem"></i>
+        </div>
+            <div style="text-align: center; margin-top: 24px;">
+                   <span style="font-size: 8pt; color: white; width: 100%;">This website was developed by <a href="https://twitter.com/lafeo_0007">Raayaan Sahu, 16</a></span><br>    
+                   <span style="font-size: 8pt; color: white; width: 100%;">This independently organized TEDx event is operated
+                    under license from TED</span>
+                    
+            </div>
+        
+        </div>
+
+</body>
+<script>
+    var x = 0;
+        $("#bar").click(function (){
+        
+
+        if(x == 0){
+            $("#respNav").css("visibility", "visible").fadeIn(800);
+            $(".fa-bars").removeClass("fa-bars");
+            $(".icon").addClass("fa-times");
+            x = 1;
+        }
+        else if(x == 1){
+            $("#respNav").fadeOut(800);
+            $(".fa-times").removeClass("fa-times");
+            $(".icon").addClass("fa-bars");
+            x = 0;
+        }
+        
+    });
+    $(function () {
+        function dropOrNawt(){
+        var x = document.getElementById("nav");
+        if(x.className == "navbar")
+            x.className += "resp";
+        else
+            x.className = "navbar";
+    }
+        $(document).scroll(function () {
+            console.log("DS");
+            var $nav = $("#nav");
+            if ($(this).scrollTop() > $nav.height()) {
+                $nav.toggleClass('scroll', true);
+                
+            } else {
+                $nav.toggleClass('scroll', false);
+                
+            }
+        });
+    });
+</script>
+</html>
