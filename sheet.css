@@ -1,6 +1,5 @@
 a{
     text-decoration: none;
-    display: block;
     color: white;
 }
 #indexes{
@@ -47,6 +46,7 @@ a{
 
     transition: 0.3s;
 }
+
 .dexs{
     position: absolute;
     z-index: -1;
@@ -81,7 +81,7 @@ body, html {
     position: fixed;
     top: 0;
     z-index: 3;
-    background:  transparent;
+    background: rgba(0,0,0,0.1);
     padding-right: 64px;
     box-sizing: border-box;
     border-bottom: thin solid rgba(255,255,255,0.2);
@@ -315,4 +315,5 @@ li{
         width: 90%;
         margin-left: 5%;
     }
+    
 }
